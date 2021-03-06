@@ -1,0 +1,24 @@
+<img src='../assets/logo.jpg'>
+
+<h1>{{title}}</h1>
+
+<p>this app is unstoppable and the program and free app</p>
+
+<div *ngFor="let p of problems; let i = index; trackby: trackByFn">
+  <hr>
+  <div style="padding: 10px;">
+    <input type="text" [(ngModel)]="problems[i].text">
+  </div>
+
+</div>
+
+<div>
+  <button (click)="send()">SEND</button>
+</div>
+
+<h3 *ngIf="message">{{message}}</h3>click the bottem sent to.
+
+
+
+
+the data will be better then the ping
